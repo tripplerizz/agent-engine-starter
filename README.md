@@ -25,9 +25,6 @@ The project uses `uv` for dependency management (as indicated by `uv.lock`) and 
 
 ## Resources
 
-Managing Deployed Agents on AgentEngine
-AWS Product Mapping
-
 **GCP vs. AWS: Core Concepts & Terminology Mapping:**
 
 *   **Resource Hierarchy:** Google Cloud (Organization, Folders, Projects) vs. AWS (Organizations, OUs, Accounts).
