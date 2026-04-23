@@ -6,7 +6,7 @@ from simple_agent.agent import root_agent
 
 PROJECT_ID = os.getenv("PROJECT_ID")
 LOCATION = "us-central1"
-STAGING_BUCKET = "adk_demo_staging_bucket_3412"
+STAGING_BUCKET = "gs://adk_demo_staging_bucket_34d12"
 DEV_USER = os.getenv("DEV_USER")
 DISPLAY_NAME = "simple_agent_" + DEV_USER
 
@@ -26,7 +26,7 @@ remote_app = agent_engines.create(
     extra_packages=["./simple_agent"],
     requirements=["google-cloud-aiplatform[adk,agent_engines]"],
     display_name=DISPLAY_NAME,
-    gcs_dir_name= DEV_USER + "_" + str(uuid.uuid4())
+    gcs_dir_name= DEV_USER
 )
 
 print(f"Deployed! Resource name: {remote_app.resource_name}")
