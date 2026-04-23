@@ -2,7 +2,7 @@ import os
 import vertexai
 from vertexai.preview import reasoning_engines
 from vertexai import agent_engines
-from logging_agent.agent import root_agent
+from simple_agent.agent import root_agent
 
 PROJECT_ID = os.getenv("PROJECT_ID")
 LOCATION = os.getenv("LOCATION")
