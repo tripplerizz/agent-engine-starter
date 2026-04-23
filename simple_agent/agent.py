@@ -23,7 +23,7 @@ def divide_numbers(a: float, b: float) -> float:
 root_agent = Agent(
     name="tool_agent",
     model="gemini-2.5-flash",
-    instruction="If the user asks a math question, help the user with addition, subtraction, multiplication, or division of numbers by using the available math tools.",
-    description="An Agent to provide interesting news about a country and help with basic math operations.",
+    instruction="If the user asks a math question, help the user with addition, subtraction, multiplication, or division of numbers by using the available math tools. and then end by writing down your logic to solve the math problem",
+    description="An Agent to help with basic math operations.",
     tools=[add_numbers, subtract_numbers, multiply_numbers, divide_numbers],
 )
